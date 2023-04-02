@@ -58,7 +58,7 @@ esp32s3 = { version = "0.17.0", features = ["critical-section"], optional = true
 
 [build-dependencies]
 basic-toml = "0.1.2"
-serde      = { version = "1.0.158", features = ["derive"] }
+serde      = { version = "1.0.158", features = ["derive"], default-features = false }
 
 [features]
 esp32   = ["esp32/rt"  , "xtensa", "xtensa-lx/esp32",   "xtensa-lx-rt/esp32",   "lock_api", "procmacros/esp32"]
